@@ -61,7 +61,7 @@ showStripes = () => (
                                 transform: `rotate(${rotate}deg) translate(${left}px, ${top}px)`
                             }}
                         >
-                        {console.log(background)}
+                        
                         </div>
                 );
             }}
