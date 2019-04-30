@@ -39,7 +39,7 @@ const FormField = ({ formdata, id, change }) => {
             ) : null}
             <select
               value={formdata.value}
-              onChange={(event, id) => change({ event, id })}
+              onChange={(event) => change({ event, id })}
             >
               <option value="">Select one</option>
               {formdata.config.options.map(item => (
