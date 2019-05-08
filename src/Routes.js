@@ -13,6 +13,7 @@ import AdminPlayers from './Components/admin/players/index';
 import AddEditPlayers from './Components/admin/players/addEditPlayers';
 import TheTeam from './Components/theTeam';
 import TheMatches from './Components/matches';
+import NotFound from './Components/ui/notFound';
 
 const Routes = props => {
   return (
@@ -50,6 +51,7 @@ const Routes = props => {
         />
         <PublicRoute {...props} restricted={false} path="/the_team" exact component={TheTeam} />
         <PublicRoute {...props} restricted={false} path="/" exact component={Home} />
+        <PublicRoute {...props} restricted={false} component={NotFound} />
       </Switch>
     </Layout>
   );
